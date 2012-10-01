@@ -5,7 +5,7 @@ server "172.16.194.128", :web, :app, :db, :primary => true
 
 
 set :application, "deployapp"
-set :user, "eightynine"
+set :user, "deployer"
 set :deploy_to, "/var/www/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
