@@ -1,3 +1,4 @@
+require "rvm/capistrano"
 require "bundler/capistrano"
 
 server "172.16.194.128", :web, :app, :db, :primary => true
@@ -15,7 +16,7 @@ set :branch, "master"
 set :rvm_type, :system
 set :rvm_ruby_string, "ruby-1.9.3-p0@deployapp"
 
-default_run_option[:pty] = true
+default_run_options[:pty] = true
 ssh_option[:forward_agent] = true
 
 
