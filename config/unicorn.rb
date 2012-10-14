@@ -6,6 +6,6 @@ stdout_path "#{root}/log/unicorn.log"
 
 preload_app true
 
-listen "/tmp/unicorn.blog.sock"
+listen "/tmp/deployapp.sock", :backlog => 64
 worker_processes 4
 timeout 30
